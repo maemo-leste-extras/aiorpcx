@@ -19,7 +19,7 @@ Package: python3-aiorpcx
 Architecture: all
 Depends: ${misc:Depends}, ${python3:Depends}
 Suggests: python-aiorpcx-doc
-Description: Generic async RPC implementation, including JSON-RPC (Python 3)
+Description: generic async RPC implementation, including JSON-RPC (Python 3)
  Transport, protocol and framing-independent async RPC client and server
  implementation.
  .
@@ -30,7 +30,7 @@ Architecture: all
 Section: doc
 Depends: ${misc:Depends}, ${sphinxdoc:Depends}
 Built-Using: ${sphinxdoc:Built-Using}
-Description: Generic async RPC implementation, including JSON-RPC (documentation)
+Description: generic async RPC implementation, including JSON-RPC (documentation)
  Transport, protocol and framing-independent async RPC client and server
  implementation.
  .
