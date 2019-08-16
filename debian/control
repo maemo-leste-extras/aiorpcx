@@ -1,0 +1,32 @@
+Source: aiorpcx
+Section: python
+Priority: optional
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Uploaders: Piotr Ożarowski <piotr@debian.org>
+Build-Depends: debhelper (>= 12), dh-python, python3-all, python3-setuptools, python3-sphinx
+Standards-Version: 4.4.0
+Homepage: https://github.com/kyuupichan/aiorpcX
+Vcs-Browser: https://salsa.debian.org/python-team/modules/aiorpcx
+Vcs-Git: https://salsa.debian.org/python-team/modules/aiorpcx.git
+Testsuite: autopkgtest-pkg-python
+
+Package: python3-aiorpcx
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Suggests: python-aiorpcx-doc
+Description: Generic async RPC implementation, including JSON-RPC (Python 3)
+ Transport, protocol and framing-independent async RPC client and server
+ implementation.
+ .
+ This package installs the library for Python 3.
+
+Package: python-aiorpcx-doc
+Architecture: all
+Section: doc
+Depends: ${sphinxdoc:Depends}, ${misc:Depends}
+Built-Using: ${sphinxdoc:Built-Using}
+Description: Generic async RPC implementation, including JSON-RPC (documentation)
+ Transport, protocol and framing-independent async RPC client and server
+ implementation.
+ .
+ This is the documentation package.

@@ -1,0 +1,10 @@
+Document: aiorpcx
+Title: aiorpcx API Manual
+Author: Neil Booth
+Abstract: aiorpcx is a generic asyncio library implementation of RPC suitable
+ for an application that is a client, server or both.
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-aiorpcx-doc/html/index.html
+Files: /usr/share/doc/python-aiorpcx-doc/html/*.html

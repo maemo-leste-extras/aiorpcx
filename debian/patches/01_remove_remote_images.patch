@@ -1,0 +1,20 @@
+Description: Remove remotely hosted images from the documentation
+Author: Laurent Bigonville <bigon@debian.org>
+Forwarded: not-needed
+
+--- a/docs/index.rst
++++ b/docs/index.rst
+@@ -2,13 +2,6 @@
+ aiorpcX
+ =======
+ 
+-.. image:: https://badge.fury.io/py/aiorpcX.svg
+-    :target: http://badge.fury.io/py/aiorpcX
+-.. image:: https://travis-ci.org/kyuupichan/aiorpcX.svg?branch=master
+-    :target: https://travis-ci.org/kyuupichan/aiorpcX
+-.. image:: https://coveralls.io/repos/github/kyuupichan/aiorpcX/badge.svg
+-    :target: https://coveralls.io/github/kyuupichan/aiorpcX
+-
+ A generic asyncio library implementation of RPC suitable for an
+ application that is a client, server or both.
+ 
