@@ -3,7 +3,7 @@ Section: python
 Priority: optional
 Maintainer: Laurent Bigonville <bigon@debian.org>
 Uploaders: Piotr Ożarowski <piotr@debian.org>
-Build-Depends: debhelper (>= 12),
+Build-Depends: debhelper-compat (= 12),
                dh-python,
                python3-all,
                python3-setuptools,
