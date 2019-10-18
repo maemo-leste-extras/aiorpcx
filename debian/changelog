@@ -1,3 +1,9 @@
+aiorpcx (0.18.3-2) UNRELEASED; urgency=medium
+
+  * Bump Standards-Version to 4.4.1.
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 18 Oct 2019 16:35:05 +0200
+
 aiorpcx (0.18.3-1) unstable; urgency=medium
 
   * Team upload.
