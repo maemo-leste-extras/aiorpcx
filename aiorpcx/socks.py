@@ -28,6 +28,7 @@
 import asyncio
 import collections
 from ipaddress import IPv4Address, IPv6Address
+import secrets
 import socket
 import struct
 from functools import partial
@@ -35,11 +36,20 @@ from functools import partial
 from aiorpcx.util import NetAddress
 
 
-__all__ = ('SOCKSUserAuth', 'SOCKS4', 'SOCKS4a', 'SOCKS5', 'SOCKSProxy',
+__all__ = ('SOCKSUserAuth', 'SOCKSRandomAuth', 'SOCKS4', 'SOCKS4a', 'SOCKS5', 'SOCKSProxy',
            'SOCKSError', 'SOCKSProtocolError', 'SOCKSFailure')
 
 
 SOCKSUserAuth = collections.namedtuple("SOCKSUserAuth", "username password")
+
+
+# Random authentication is useful when used with Tor for stream isolation.
+class SOCKSRandomAuth(SOCKSUserAuth):
+    def __getitem__(self, key):
+        return secrets.token_hex(32)
+
+
+SOCKSRandomAuth.__new__.__defaults__ = (None, None)
 
 
 class SOCKSError(Exception):
@@ -316,7 +326,7 @@ class SOCKSProxy:
                 await self._handshake(client, sock, loop)
                 self.peername = sock.getpeername()
                 return sock
-            except (OSError, SOCKSProtocolError) as e:
+            except (OSError, SOCKSError) as e:
                 exception = e
                 # Don't close the socket because of an asyncio bug
                 # see https://github.com/kyuupichan/aiorpcX/issues/8
