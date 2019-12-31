@@ -1,7 +1,14 @@
-Description: Remove remotely hosted images from the documentation
-Author: Laurent Bigonville <bigon@debian.org>
-Forwarded: not-needed
+From: Laurent Bigonville <bigon@debian.org>
+Date: Tue, 31 Dec 2019 18:24:44 +0100
+Subject: Remove remotely hosted images from the documentation
 
+Forwarded: not-needed
+---
+ docs/index.rst | 7 -------
+ 1 file changed, 7 deletions(-)
+
+diff --git a/docs/index.rst b/docs/index.rst
+index 723fa09..3e2a7a3 100644
 --- a/docs/index.rst
 +++ b/docs/index.rst
 @@ -2,13 +2,6 @@
