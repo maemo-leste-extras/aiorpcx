@@ -29,6 +29,7 @@ Architecture: all
 Section: doc
 Depends: ${misc:Depends}, ${sphinxdoc:Depends}
 Built-Using: ${sphinxdoc:Built-Using}
+Multi-Arch: foreign
 Description: generic async RPC implementation, including JSON-RPC (documentation)
  Transport, protocol and framing-independent async RPC client and server
  implementation.
