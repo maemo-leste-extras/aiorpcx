@@ -1,3 +1,10 @@
+aiorpcx (0.18.4-2) UNRELEASED; urgency=low
+
+  * Apply multi-arch hints.
+    + python-aiorpcx-doc: Add Multi-Arch: foreign.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Wed, 01 Jul 2020 03:19:01 -0000
+
 aiorpcx (0.18.4-1) unstable; urgency=medium
 
   [ Ondřej Nový ]
