@@ -1,10 +1,15 @@
 aiorpcx (0.18.4-2) UNRELEASED; urgency=low
 
+  [ Debian Janitor ]
   * Apply multi-arch hints.
     + python-aiorpcx-doc: Add Multi-Arch: foreign.
   * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
     Repository-Browse.
   * Update standards version to 4.5.0, no changes needed.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
 
  -- Debian Janitor <janitor@jelmer.uk>  Wed, 01 Jul 2020 03:19:01 -0000
 
