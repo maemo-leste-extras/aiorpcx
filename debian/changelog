@@ -10,6 +10,8 @@ aiorpcx (0.18.4-2) UNRELEASED; urgency=low
   [ Ondřej Nový ]
   * d/control: Update Maintainer field with new Debian Python Team
     contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
 
  -- Debian Janitor <janitor@jelmer.uk>  Wed, 01 Jul 2020 03:19:01 -0000
 
